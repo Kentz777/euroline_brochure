@@ -1,4 +1,5 @@
 import { FaLinkedinIn, FaFacebookF, FaEnvelope } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import footerLogo from "../assets/footer_logo.png";
 
 const Footer = () => {
@@ -26,9 +27,9 @@ const Footer = () => {
           From transport to infrastructure—built to move with your business.
         </p>
 
-        <button className="inline-flex items-center gap-2 border border-blue-700 text-blue-700 px-4 py-1.5 rounded-full hover:bg-blue-700 hover:text-white transition">
+        <button className="flex mx-5 items-center gap-2 border border-[#08268F] text-[#08268F] px-4 py-1.5 rounded-full hover:bg-blue-[#08268F] hover:text-white transition">
           Call To Action
-          <span className="text-lg">→</span>
+          <FaArrowRight />
         </button>
       </div>
 
@@ -52,15 +53,15 @@ const Footer = () => {
       </div>
 
       {/* Social Icons */}
-      <div className="flex justify-center gap-6">
-        <a href="#" className="bg-blue-900 text-white p-2 rounded-md">
-          <FaLinkedinIn />
+      <div className="flex justify-center gap-4">
+        <a href="#" className="bg-blue-900 text-white p-2">
+          <FaLinkedinIn className="text-2xl" />
         </a>
-        <a href="#" className="bg-blue-900 text-white p-2 rounded-md">
-          <FaFacebookF />
+        <a href="#" className="bg-blue-900 text-white p-2 ">
+          <FaFacebookF className="text-2xl" />
         </a>
-        <a href="#" className="bg-blue-900 text-white p-2 rounded-md">
-          <FaEnvelope />
+        <a href="#" className="bg-blue-900 text-white p-2">
+          <FaEnvelope className="text-2xl" />
         </a>
       </div>
     </footer>

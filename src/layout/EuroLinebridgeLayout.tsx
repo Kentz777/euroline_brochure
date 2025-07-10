@@ -9,9 +9,9 @@ type LayoutProps = {
 
 const EuroLinebridgeLayout = ({ children }: LayoutProps) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gray-800 select-none relative">
       <Header />
-      <main className="flex-grow container mx-auto">
+      <main className="flex-grow w-full">
         <Outlet />
         {children}
       </main>
