@@ -7,7 +7,7 @@ const Header = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   return (
     <>
-      <header className="w-full flex items-center justify-between px-4 py-2 bg-transparent absolute">
+      <header className="w-full flex items-center justify-between px-4 py-2 bg-transparent absolute z-50">
         <img
           src={mainLogo}
           alt="Logo"

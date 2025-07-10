@@ -1,10 +1,13 @@
 import React from "react";
+import HomeHeroSection from "../../components/HomeHeroSection";
+import HomeServiceSection from "../../components/HomeServiceSection";
 
 const Home = () => {
   return (
-    <div className="bg-red-600">
-      <p>Home linebridge</p>
-    </div>
+    <>
+      <HomeHeroSection />
+      <HomeServiceSection />
+    </>
   );
 };
 
