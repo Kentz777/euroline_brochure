@@ -28,7 +28,7 @@ const LogisticsHeroCard = () => {
   };
 
   return (
-    <div className="relative w-full max-w-xs h-[500px] mx-auto flex justify-center">
+    <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md h-[500px] sm:h-[550px] md:h-[600px] lg:h-[650px] xl:h-[700px] mx-auto flex justify-center">
       {[...cards]
         .map((card, index) => ({
           ...card,
@@ -55,21 +55,16 @@ const LogisticsHeroCard = () => {
                   : "rgba(0, 0, 0, 0.2)",
               }}
             >
-              <h2 className="text-2xl font-semibold mb-3">{card.title}</h2>
-              <p className="text-sm mb-6 max-w-[80%]">{card.description}</p>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3">
+                {card.title}
+              </h2>
+              <p className="text-sm md:text-md lg:text-lg mb-6 max-w-[80%]">
+                {card.description}
+              </p>
               <CTAButton
                 label="Call To Action"
                 onClick={() => console.log("Clicked!")}
               />
-              {card.isFront && (
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    swapCard();
-                  }}
-                  className="flex items-center gap-2 bg-primary text-white px-5 py-2 rounded-full hover:bg-primary/90 transition"
-                ></button>
-              )}
             </div>
           </motion.div>
         ))}

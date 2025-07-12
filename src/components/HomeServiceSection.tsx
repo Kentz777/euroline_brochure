@@ -3,13 +3,13 @@ import CTAButton from "./MainCTAButton";
 
 const HomeServiceSection = () => {
   return (
-    <section className="w-full bg-white text-gray-800 flex flex-row items-center justify-center h-[500px]">
-      <div className="w-3/4 flex flex-col justify-between pr-2 px-4">
+    <section className="w-full bg-white text-gray-800 flex flex-row items-center justify-center h-[500px] lg:h-lvh md:h-lvh">
+      <div className="w-3/4 flex flex-col justify-between pr-2 px-4 md:px-8 lg:px-16">
         <div>
-          <h2 className="text-3xl font-bold text-blue-900 mb-4">
+          <h2 className="text-3xl md:text-6xl lg:text-7xl font-bold text-blue-900 mb-4">
             SERVICES WE OFFER
           </h2>
-          <p className="text-base leading-relaxed mb-15">
+          <p className="text-base md:text-xl lg:text-3xl leading-relaxed mb-15">
             Discover our full range of secure, efficient services tailored to
             support your operations—every step of the way.
           </p>

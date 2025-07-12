@@ -1,6 +1,7 @@
 import { FaLinkedinIn, FaFacebookF, FaEnvelope } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import footerLogo from "../assets/footer_logo.png";
+import OutlineCTAButton from "./OutlineCTAButton";
 
 const Footer = () => {
   return (
@@ -27,10 +28,7 @@ const Footer = () => {
           From transport to infrastructure—built to move with your business.
         </p>
 
-        <button className="flex mx-5 items-center gap-2 border border-[#08268F] text-[#08268F] px-4 py-1.5 rounded-full hover:bg-blue-[#08268F] hover:text-white transition">
-          Call To Action
-          <FaArrowRight />
-        </button>
+        <OutlineCTAButton label="Call To Action" />
       </div>
 
       {/* Footer Links */}
