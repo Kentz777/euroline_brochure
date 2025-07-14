@@ -3,7 +3,7 @@ import LogisticsHeroCard from "./LogisticsHeroCard";
 
 const HomeHeroSection = () => {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center bg-gray-500 pt-[120px] overflow-hidden w-full">
+    <div className="relative min-h-screen flex flex-col items-center justify-center bg-gray-500 pt-[120px] lg:pt-[180px] overflow-hidden w-full">
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
         src="/video/Euroline.mp4"

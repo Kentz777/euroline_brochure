@@ -36,7 +36,7 @@ const HomeServicesListSection = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className={`flex flex-row items-center justify-start md:gap-12 sm:gap-6 lg:gap-4 ${
+            className={`flex flex-row items-center justify-start md:gap-12 gap-6 lg:gap-4 ${
               index % 2 !== 1 ? "flex-row-reverse" : ""
             }`}
           >
@@ -55,7 +55,7 @@ const HomeServicesListSection = () => {
             <img
               src={service.img}
               alt={service.title}
-              className="w-24 h-24 md:w-58 md:h-58 object-cover rounded-lg flex-shrink-0"
+              className="w-24 h-24 md:w-58 md:h-58 object-cover rounded-lg flex-shrink-0 "
             />
           </div>
         ))}

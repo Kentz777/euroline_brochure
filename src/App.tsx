@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import EuroLinebridgeLayout from "./layout/EuroLinebridgeLayout";
 import Home from "./pages/linebridge/Home";
+import Logistics from "./pages/linebridge/Logistics";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       {/* EuroLinebridge Logistics Section */}
       <Route path="/linebridge" element={<EuroLinebridgeLayout />}>
         <Route path="/linebridge/home" element={<Home />} />
+        <Route path="/linebridge/logistics" element={<Logistics />} />
       </Route>
     </Routes>
   );
