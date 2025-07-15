@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { IoClose, IoChevronDown } from "react-icons/io5";
+import { Link } from "react-router-dom";
+import { IoClose } from "react-icons/io5";
 import { FaCaretDown } from "react-icons/fa";
 import mainLogo from "../assets/main_logo.png";
 
@@ -12,13 +13,17 @@ const TabDrawer = ({ onClose }: Props) => {
 
   return (
     <div className="fixed top-0 left-0 h-full w-72 bg-white z-50 shadow-lg pl-4 pr-4 pb-4 pt-6 overflow-y-auto">
+      {/* Close Button */}
       <div className="flex items-center justify-end mb-4">
-        <button onClick={onClose} className="">
+        <button onClick={onClose}>
           <IoClose className="text-2xl text-gray-600" />
         </button>
       </div>
 
-      <img src={mainLogo} alt="Logo" className="w-16 h-16 object-contain" />
+      {/* Logo */}
+      <Link to="/linebridge/home">
+        <img src={mainLogo} alt="Logo" className="w-16 h-16 object-contain" />
+      </Link>
 
       <div className="mb-4">
         <h1 className="text-blue-600 font-regular text-lg">
@@ -26,15 +31,16 @@ const TabDrawer = ({ onClose }: Props) => {
         </h1>
       </div>
 
+      {/* Navigation */}
       <nav className="space-y-4">
-        {/* Top Divider */}
         <div className="border-t border-gray-400 my-4" />
-        <a
-          href="#"
+
+        <Link
+          to="/linebridge/home"
           className="block text-gray-800 font-medium hover:text-[#08268F]"
         >
           Home
-        </a>
+        </Link>
 
         <div>
           <button
@@ -50,56 +56,73 @@ const TabDrawer = ({ onClose }: Props) => {
           </button>
 
           {showServices && (
-            <ul className=" mt-2 space-y-2 text-[14px] text-gray-900">
+            <ul className="mt-2 space-y-2 text-[14px] text-gray-900">
               <li className="text-gray-400">Services We Offer:</li>
               <li>
-                <a href="#" className="hover:text-[#08268F]">
+                <Link
+                  to="/linebridge/logistics"
+                  className="hover:text-[#08268F]"
+                >
                   Logistics
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#08268F]">
+                <Link
+                  to="/linebridge/warehousing"
+                  className="hover:text-[#08268F]"
+                >
                   Warehousing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#08268F]">
+                <Link
+                  to="/linebridge/supply-chain"
+                  className="hover:text-[#08268F]"
+                >
                   Supply Chain
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#08268F]">
+                <Link
+                  to="/linebridge/fabrication"
+                  className="hover:text-[#08268F]"
+                >
                   Fabrication
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-[#08268F]">
+                <Link
+                  to="/linebridge/civil-works"
+                  className="hover:text-[#08268F]"
+                >
                   Civil Works
-                </a>
+                </Link>
               </li>
             </ul>
           )}
         </div>
 
-        <a
-          href="#"
+        <Link
+          to="/linebridge/careers"
           className="block text-gray-800 font-medium hover:text-[#08268F]"
         >
           Careers
-        </a>
-        <a
-          href="#"
+        </Link>
+
+        <Link
+          to="/linebridge/about"
           className="block text-gray-800 font-medium hover:text-[#08268F]"
         >
           About Us
-        </a>
-        <a
-          href="#"
+        </Link>
+
+        <Link
+          to="/linebridge/contacts"
           className="block text-gray-800 font-medium hover:text-[#08268F]"
         >
           Contact Us
-        </a>
-        {/* Bottom Divider */}
+        </Link>
+
         <div className="border-t border-gray-400 my-4" />
       </nav>
     </div>

@@ -31,7 +31,7 @@ const services = [
 
 const HomeServicesListSection = () => {
   return (
-    <section className="w-full bg-white px-4 md:px-8 lg:px-16 py-12">
+    <section className="w-full bg-white px-4 md:px-8 lg:px-64 py-12">
       <div className="flex flex-col gap-12 md:gap-12 lg:gap-32 md:grid md:grid-cols-1 sm:grid sm:grid-cols-2">
         {services.map((service, index) => (
           <div
