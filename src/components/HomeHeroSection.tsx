@@ -1,5 +1,6 @@
 import React from "react";
 import LogisticsHeroCard from "./LogisticsHeroCard";
+import { TypeAnimation } from "react-type-animation";
 
 const HomeHeroSection = () => {
   return (
@@ -15,9 +16,13 @@ const HomeHeroSection = () => {
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative flex flex-col items-center justify-center text-center px-4 py-12 text-white z-10">
         <div className="max-w-2xl">
-          <h1 className="text-4xl sm:text-5xl font-bold mb-8 blur-[0.8px]">
-            Euro Linebridge Logistics
-          </h1>
+          <TypeAnimation
+            sequence={["Euroline", 1000, "Euro Linebridge Logistics", 3000]}
+            wrapper="h1"
+            speed={50}
+            className="text-4xl sm:text-5xl font-bold mb-8 blur-[0.8px]"
+            repeat={Infinity}
+          />
           <p className="text-base sm:text-lg leading-relaxed">
             Streamline your business operations with our expert corporate
             logistics services. Tap into seamless transportation and warehousing

@@ -19,7 +19,7 @@ const ReusableGallery = ({ sections }: ReusableGalleryProps) => {
       {sections.map((section, idx) => (
         <div
           key={idx}
-          className="flex flex-col lg:flex-row gap-6 w-full bg-white px-6"
+          className="flex flex-col lg:flex-row gap-6 w-full bg-white px-6 lg:px-68 md:px-32"
         >
           {/* Video Section */}
           <div className="relative w-full lg:w-1/4 rounded-xl overflow-hidden h-[200px] lg:h-[700px]">

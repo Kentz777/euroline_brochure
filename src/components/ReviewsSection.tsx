@@ -38,16 +38,16 @@ const logos = [
 
 const ReviewsSection = () => {
   return (
-    <section className="bg-gradient-to-b from-[#08268F] to-[#00BFFF] text-white px-4 lg:px-72 py-10 space-y-8 mt-12">
+    <section className="bg-gradient-to-b from-[#08268F] to-[#00BFFF] text-white px-4 lg:px-68 md:px-32 py-10 space-y-8 mt-12">
       {/* Header */}
       <div className="text-center">
-        <h2 className="text-3xl sm:text-md font-semibold">
+        <p className="text-4xl sm:text-md font-semibold lg:mb-16">
           Loved by thousands of people:
-        </h2>
+        </p>
       </div>
 
       {/* Reviews */}
-      <div className="space-y-6 lg:space-y-8">
+      <div className="space-y-6 lg:space-y-6">
         {reviews.map((review) => (
           <div
             key={review.id}
