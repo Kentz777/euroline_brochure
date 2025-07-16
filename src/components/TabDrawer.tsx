@@ -27,7 +27,7 @@ const TabDrawer = ({ onClose }: Props) => {
 
       <div className="mb-4">
         <h1 className="text-blue-600 font-regular text-lg">
-          Euroline Cash Solutions Inc.
+          Euro Linebridge Logistics Inc.
         </h1>
       </div>
 

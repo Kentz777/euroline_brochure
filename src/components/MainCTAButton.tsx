@@ -11,7 +11,7 @@ const CTAButton = ({ label, onClick, className = "" }: CTAButtonProps) => (
     onClick={onClick}
     className={`
       flex items-center justify-center gap-2
-      text-white font-bold
+      text-white font-semibold
       px-5 py-2 text-sm
       md:px-6 md:py-3 md:text-base
       lg:px-7 lg:py-3.5 lg:text-lg

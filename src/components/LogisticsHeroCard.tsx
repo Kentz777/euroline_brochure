@@ -40,7 +40,7 @@ const LogisticsHeroCard = () => {
             key={card.id}
             className={`absolute top-0 left-0 w-full h-full bg-cover bg-center rounded-xl border border-white/20 shadow-2xl transition-all duration-700 ease-in-out ${
               card.isFront
-                ? "z-10 scale-90 translate-y-10 translate-x-10 brightness-75"
+                ? "z-10 scale-90 translate-y-10 translate-x-10 lg:translate-y-20 lg:translate-x-20 brightness-75"
                 : "z-20 scale-100 translate-y-0"
             }`}
             style={{ backgroundImage: `url(${card.image})` }}
@@ -55,14 +55,14 @@ const LogisticsHeroCard = () => {
                   : "rgba(0, 0, 0, 0.2)",
               }}
             >
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-3 font-lato">
                 {card.title}
               </h2>
               <p className="text-sm md:text-md lg:text-lg mb-6 max-w-[80%]">
                 {card.description}
               </p>
               <CTAButton
-                label="Call To Action"
+                label="Visit"
                 onClick={() => console.log("Clicked!")}
               />
             </div>

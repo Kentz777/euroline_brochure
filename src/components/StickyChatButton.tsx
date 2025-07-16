@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
-import chatIcon from "/images/sticky_cta.png"; // replace with your actual icon
+import chatIcon from "/images/sticky_cta.png";
+import logoIcon from "/images/main_logo.png";
 
 const StickyChatButtonWithModal = () => {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -30,10 +31,9 @@ const StickyChatButtonWithModal = () => {
       {/* Sticky button */}
       <button
         onClick={() => setModalOpen(true)}
-        className="fixed bottom-6 right-6 bg-blue-700 hover:bg-blue-800 text-white flex items-center gap-2 px-4 py-2 rounded-full shadow-lg z-40"
+        className="fixed bottom-20 right-0 sm:right-12 text-white flex items-center gap-2 py-2 rounded-full z-40"
       >
-        <img src={chatIcon} alt="Chat" className="w-6 h-6" />
-        <span className="text-sm font-semibold">Chat With Us</span>
+        <img src={chatIcon} alt="Chat" className="w-32 h-32" />
       </button>
 
       {/* Modal */}
@@ -51,7 +51,7 @@ const StickyChatButtonWithModal = () => {
             {/* Modal content */}
             <div className="text-center mb-4">
               <img
-                src={chatIcon}
+                src={logoIcon}
                 alt="Chat Logo"
                 className="w-10 h-10 mx-auto mb-2"
               />
@@ -62,6 +62,9 @@ const StickyChatButtonWithModal = () => {
             </div>
 
             {/* Inputs */}
+            <p className="text-gray-700 text-sm mb-2 font-medium">
+              Your Whatsapp Number
+            </p>
             <input
               type="text"
               value={userNumber}
@@ -69,14 +72,17 @@ const StickyChatButtonWithModal = () => {
                 setUserNumber(e.target.value.replace(/[^0-9]/g, ""))
               }
               placeholder="Your WhatsApp Number"
-              className="w-full border rounded px-3 py-2 mb-3 text-sm focus:outline-none focus:ring focus:border-blue-300"
+              className="w-full border border-[#D5D7DA] rounded-lg px-3 py-3 mb-3 text-sm focus:outline-none focus:ring focus:border-blue-300"
             />
+            <p className="text-gray-700 text-sm mb-2 font-medium">
+              Message (160 chars long)
+            </p>
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               placeholder="Message (160 chars max)"
               maxLength={160}
-              className="w-full border rounded px-3 py-2 mb-4 text-sm focus:outline-none focus:ring focus:border-blue-300"
+              className="w-full border border-[#D5D7DA] rounded-lg px-3 py-3 h-45 mb-4 text-sm focus:outline-none focus:ring focus:border-blue-300"
             />
 
             {/* Action buttons */}
@@ -89,7 +95,7 @@ const StickyChatButtonWithModal = () => {
               </button>
               <button
                 onClick={handleSend}
-                className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+                className="px-8 py-2 bg-[#08268F] text-white rounded hover:bg-blue-700"
               >
                 Send
               </button>
