@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Links */}
-        <div className="grid grid-cols-2 gap-y-4 text-center sm:flex sm:justify-between lg:gap-x-32 sm:text-left lg:ml-auto lg:w-auto">
+        <div className="grid grid-cols-2 gap-y-4 text-center sm:flex sm:justify-between mt-3 lg:mt-0 lg:gap-x-32 sm:text-left lg:ml-auto lg:w-auto">
           <div className="space-y-1 text-left">
             <p className="hover:text-[#08268F]">
               <Link to="linebridge/about">About Us</Link>

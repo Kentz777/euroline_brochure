@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full flex items-center justify-between px-4 lg:px-12 py-2 bg-transparent lg:bg-white shadow-sm fixed top-0 z-50">
+      <header className="w-full flex items-center justify-between px-4 lg:px-12 py-2 bg-transparent md:bg-white lg:bg-white shadow-sm fixed top-0 z-50">
         <Link to="/linebridge/home">
           <img
             src={mainLogo}
@@ -34,7 +34,7 @@ const Header = () => {
             className="w-[72px] h-[72px] object-contain"
           />
         </Link>
-        <nav className="hidden lg:flex items-center gap-6 relative">
+        <nav className="hidden lg:flex md:flex items-center gap-6 relative">
           {navLinks.map((link, idx) =>
             link.name === "Services" ? (
               <div
@@ -80,7 +80,7 @@ const Header = () => {
             )
           )}
         </nav>
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <button onClick={() => setDrawerOpen(true)}>
             <IoMenu size={32} color="#333" />
           </button>

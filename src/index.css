@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&display=swap');
 @import "tailwindcss";
 
+@theme {
+    --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+    --font-lato: "Lato", ui-sans-serif, system-ui, sans-serif;
+}
 
-body {
-    @apply font-sans;
+@layer utilities {
+    .font-sans {
+        font-family: var(--font-sans);
+    }
+
+    .font-lato {
+        font-family: var(--font-lato);
+    }
 }

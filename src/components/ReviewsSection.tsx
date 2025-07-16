@@ -34,6 +34,7 @@ const logos = [
   "/images/logo1.jpg",
   "/images/logo1.jpg",
   "/images/logo1.jpg",
+  ,
 ];
 
 const ReviewsSection = () => {
@@ -41,7 +42,7 @@ const ReviewsSection = () => {
     <section className="bg-gradient-to-b from-[#08268F] to-[#00BFFF] text-white px-4 lg:px-68 md:px-32 py-10 space-y-8 mt-12">
       {/* Header */}
       <div className="text-center">
-        <p className="text-4xl sm:text-md font-semibold lg:mb-16">
+        <p className="text-4xl sm:text-md font-semibold lg:mb-16 font-lato">
           Loved by thousands of people:
         </p>
       </div>

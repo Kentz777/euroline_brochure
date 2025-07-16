@@ -1,5 +1,6 @@
 import React from "react";
 import OutlineCTAButton from "./OutlineCTAButton";
+import { motion } from "framer-motion";
 
 const services = [
   {
@@ -34,14 +35,22 @@ const HomeServicesListSection = () => {
     <section className="w-full bg-white px-4 md:px-8 lg:px-64 py-12">
       <div className="flex flex-col gap-12 md:gap-12 lg:gap-32 md:grid md:grid-cols-1 sm:grid sm:grid-cols-2">
         {services.map((service, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 0.8,
+              delay: index * 0.1, // ← delay per item
+              ease: "easeOut",
+            }}
+            viewport={{ once: false, amount: 0.3 }}
             className={`flex flex-row items-center justify-start md:gap-12 gap-6 lg:gap-4 ${
               index % 2 !== 1 ? "flex-row-reverse" : ""
             }`}
           >
             <div className="flex flex-col items-start text-left max-w-xs flex-1">
-              <h3 className="text-lg font-bold md:text-lg lg:text-4xl text-blue-900">
+              <h3 className="text-lg font-bold md:text-lg lg:text-4xl text-blue-900 font-lato">
                 {service.title}
               </h3>
               <p className="text-sm md:text-lg lg:text-2xl text-gray-700 mt-1 mb-3">
@@ -52,12 +61,13 @@ const HomeServicesListSection = () => {
                 className="!px-4 !py-2 !text-sm !rounded-full"
               />
             </div>
+
             <img
               src={service.img}
               alt={service.title}
-              className="w-24 h-24 md:w-58 md:h-58 object-cover rounded-lg flex-shrink-0 "
+              className="w-24 h-24 md:w-58 md:h-58 object-cover rounded-lg flex-shrink-0"
             />
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

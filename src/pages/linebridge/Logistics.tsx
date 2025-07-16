@@ -1,6 +1,7 @@
 import ReusableGallery from "../../components/ReusableGallery";
 import ReusableHeroSection from "../../components/ReusableHeroSection";
 import ReviewsSection from "../../components/ReviewsSection";
+import StickyChatButton from "../../components/StickyChatButton";
 
 const Logistics = () => {
   return (
@@ -36,6 +37,7 @@ const Logistics = () => {
         ]}
       />
       <ReviewsSection />
+      <StickyChatButton />
     </div>
   );
 };

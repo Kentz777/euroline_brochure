@@ -40,7 +40,7 @@ const ReusableHeroSection = ({
       }}
     >
       <div className="max-w-lg mx-auto lg:max-w-2xl">
-        <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-semibold text-[#08268F] mb-12 leading-tight">
+        <h1 className="text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-semibold text-[#08268F] mb-12 leading-tight font-lato">
           {title}
         </h1>
         <p className="text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl text-[#08268F] leading-relaxed mb-12">

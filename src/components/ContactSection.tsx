@@ -44,8 +44,10 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center pt-[120px] lg:pt-[180px] px-6 py-10 bg-gradient-to-b from-[#00BFFF] to-[#08268F] text-white">
-      <h1 className="text-4xl font-semibold mb-16 lg:mb-32">Message Us</h1>
+    <div className="min-h-screen flex flex-col items-center md:pt-[250px] pt-[120px] lg:pt-[180px] px-6 py-10 bg-gradient-to-b from-[#00BFFF] to-[#08268F] text-white">
+      <h1 className="text-4xl font-semibold mb-16 lg:mb-32 font-lato">
+        Message Us
+      </h1>
       <div className="w-full max-w-sm space-y-8">
         <input
           type="text"
@@ -63,8 +65,19 @@ const ContactSection = () => {
           className="w-full bg-transparent border-b border-white placeholder-white text-white focus:outline-none py-2 md:text-2xl"
         />
         <div className="flex justify-center">
-          <button onClick={handleSend}>
-            <MainCTAButton2 label="Send Message" />
+          <button
+            className="
+      flex items-center justify-center gap-2
+      text-[#08268F] font-bold bg-white
+      px-5 py-2 text-sm
+      md:px-6 md:py-3 md:text-base
+      lg:px-7 lg:py-3.5 lg:text-lg
+      xl:px-8 xl:py-4 xl:text-xl
+      rounded-xl shadow-lg
+      hover:brightness-110 active:scale-95 transition"
+            onClick={handleSend}
+          >
+            Send Message
           </button>
         </div>
       </div>
