@@ -32,6 +32,8 @@ const HomeServiceSection = () => {
           muted
           playsInline
           className="w-full h-full object-cover"
+          preload="none"
+          poster="/images/lazy_loader.png"
         />
       </div>
     </section>

@@ -12,6 +12,8 @@ const HomeHeroSection = () => {
         loop
         muted
         playsInline
+        preload="none"
+        poster="/images/lazy_loader.png"
       />
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="relative flex flex-col items-center justify-center text-center px-4 py-12 text-white z-10">
