@@ -1,5 +1,3 @@
-import React from "react";
-
 const LocationSection = () => {
   return (
     <section className="flex flex-col items-center  justify-center px-6 lg:px-68 md:px-32 py-12 bg-white">

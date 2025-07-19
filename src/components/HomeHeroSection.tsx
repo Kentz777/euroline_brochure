@@ -1,4 +1,3 @@
-import React from "react";
 import LogisticsHeroCard from "./LogisticsHeroCard";
 import { TypeAnimation } from "react-type-animation";
 

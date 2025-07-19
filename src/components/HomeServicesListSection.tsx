@@ -1,4 +1,3 @@
-import React from "react";
 import OutlineCTAButton from "./OutlineCTAButton";
 import { motion } from "framer-motion";
 

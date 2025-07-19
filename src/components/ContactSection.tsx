@@ -5,7 +5,6 @@ import {
   FaTwitter,
   FaMapMarkerAlt,
 } from "react-icons/fa";
-import MainCTAButton2 from "./MainCTSButton2";
 
 const ContactSection = () => {
   const [userNumber, setUserNumber] = useState("");

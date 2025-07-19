@@ -1,5 +1,3 @@
-import React from "react";
-
 const AboutGallerySection = () => {
   return (
     <section className="flex flex-col items-center px-4 py-12">

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { animate, motion, useMotionValue, useTransform } from "framer-motion";
 
 const Counter = ({ end, suffix = "", duration = 2 }) => {

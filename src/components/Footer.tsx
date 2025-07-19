@@ -1,5 +1,4 @@
 import { FaLinkedinIn, FaFacebookF, FaEnvelope } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
 import footerLogo from "../assets/footer_logo.png";
 import OutlineCTAButton from "./OutlineCTAButton";
 import { Link } from "react-router-dom";

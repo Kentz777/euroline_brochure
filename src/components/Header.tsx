@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import mainLogo from "../assets/main_logo.png";
 import { IoMenu } from "react-icons/io5";

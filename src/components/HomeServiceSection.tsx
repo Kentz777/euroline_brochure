@@ -1,4 +1,3 @@
-import React from "react";
 import CTAButton from "./MainCTAButton";
 import { motion } from "framer-motion";
 
