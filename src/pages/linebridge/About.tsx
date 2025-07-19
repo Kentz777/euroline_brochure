@@ -3,6 +3,7 @@ import AboutReviews from "../../components/AboutReviews";
 import ReusableCoreValues from "../../components/ReusableCoreValues";
 import MapsSection from "../../components/MapsSection";
 import AboutGallerySection from "../../components/AboutGallerySection";
+import ReusableJobOpeningsSection from "../../components/ReusableJobOpeningsSection";
 
 const About = () => {
   return (
@@ -33,6 +34,11 @@ const About = () => {
       />
       <MapsSection />
       <AboutGallerySection />
+      <ReusableJobOpeningsSection
+        title="Join Our Team"
+        description="Join a growing team committed to excellence, innovation, and delivering real impact across industries."
+        buttonLabel="Apply Now"
+      />
     </div>
   );
 };
