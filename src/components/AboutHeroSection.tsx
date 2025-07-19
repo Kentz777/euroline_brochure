@@ -10,7 +10,7 @@ const AboutHeroSection = () => {
         transition={{ type: "spring", stiffness: 50, delay: 0.1 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        Together for <br className="md:hidden" /> Success!
+        Together for <br className="md:hidden" /> Success!!
       </motion.h2>
 
       <motion.img
