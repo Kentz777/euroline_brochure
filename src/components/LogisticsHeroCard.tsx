@@ -34,7 +34,7 @@ const LogisticsHeroCard = () => {
           ...card,
           isFront: index === frontIndex,
         }))
-        .sort((a, b) => (a.isFront ? 1 : -1))
+        .sort((a) => (a.isFront ? 1 : -1))
         .map((card) => (
           <motion.div
             key={card.id}

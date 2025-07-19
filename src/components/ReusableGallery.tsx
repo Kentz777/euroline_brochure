@@ -18,7 +18,7 @@ const ReusableGallery = ({ sections }: ReusableGalleryProps) => {
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
 
-    videoRefs.current.forEach((videoEl, idx) => {
+    videoRefs.current.forEach((videoEl) => {
       if (!videoEl) return;
 
       const observer = new IntersectionObserver(

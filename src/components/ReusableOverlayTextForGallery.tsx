@@ -1,6 +1,3 @@
-// components/ReusableOverlay.tsx
-import React from "react";
-
 type ReusableOverlayProps = {
   title: string;
   description: string;
