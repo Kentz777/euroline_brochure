@@ -1,7 +1,7 @@
 import HomeHeroSection from "../../components/HomeHeroSection";
 import HomeServiceSection from "../../components/HomeServiceSection";
 import HomeServicesListSection from "../../components/HomeServicesListSection";
-import HomeJobOpeningsSection from "../../components/HomeJobOpeningsSection";
+import ReusableJobOpeningsSection from "../../components/ReusableJobOpeningsSection";
 import StickyChatButton from "../../components/StickyChatButton";
 
 const Home = () => {
@@ -10,7 +10,11 @@ const Home = () => {
       <HomeHeroSection />
       <HomeServiceSection />
       <HomeServicesListSection />
-      <HomeJobOpeningsSection />
+      <ReusableJobOpeningsSection
+        title="JOB OPENINGS"
+        description="Join a growing team committed to excellence, innovation, and delivering real impact across industries."
+        buttonLabel="Apply Now"
+      />
       <StickyChatButton />
     </>
   );
