@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import CTAButton from "./MainCTAButton";
 
@@ -10,6 +10,7 @@ const cards = [
     description:
       "Euro Line Cash Solutions delivers secure, reliable cash handling for branches, ATMs, and businesses.",
     image: "/images/cash_solutions.jpg",
+    route: "/cash-solutions/home",
   },
   {
     id: 2,
@@ -17,11 +18,13 @@ const cards = [
     description:
       "Euro Line Logistics provides scalable logistics for transport, warehousing, and supply chains.",
     image: "/images/logistics_solutions.jpg",
+    route: "/linebridge/home",
   },
 ];
 
 const LogisticsHeroCard = () => {
   const [frontIndex, setFrontIndex] = useState(0);
+  const navigate = useNavigate();
 
   const swapCard = () => {
     setFrontIndex((prev) => (prev + 1) % cards.length);
@@ -61,10 +64,7 @@ const LogisticsHeroCard = () => {
               <p className="text-sm md:text-md lg:text-lg mb-6 max-w-[80%]">
                 {card.description}
               </p>
-              <CTAButton
-                label="Visit"
-                onClick={() => console.log("Clicked!")}
-              />
+              <CTAButton label="Visit" onClick={() => navigate(card.route)} />
             </div>
           </motion.div>
         ))}

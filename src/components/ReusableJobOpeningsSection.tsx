@@ -1,17 +1,26 @@
-import CTAButton from "./MainCTAButton";
 import { motion } from "framer-motion";
+import CTAButton from "./MainCTAButton";
+import { useNavigate } from "react-router-dom";
 
 type HomeJobOpeningsSectionProps = {
   title: string;
   description: string;
   buttonLabel: string;
+  buttonRoute: string; // <-- NEW: add this prop
 };
 
 const ReusableJobOpeningsSection = ({
   title,
   description,
   buttonLabel,
+  buttonRoute, // <-- receive it here
 }: HomeJobOpeningsSectionProps) => {
+  const navigate = useNavigate(); // <-- hook for routing
+
+  const handleButtonClick = () => {
+    navigate(buttonRoute);
+  };
+
   return (
     <section className="relative w-full h-[400px] flex items-center justify-center text-center overflow-hidden lg:h-lvh md:h-lvh">
       <img
@@ -35,7 +44,7 @@ const ReusableJobOpeningsSection = ({
           {description}
         </p>
         <div className="flex justify-center">
-          <CTAButton label={buttonLabel} />
+          <CTAButton label={buttonLabel} onClick={handleButtonClick} />
         </div>
       </motion.div>
     </section>
