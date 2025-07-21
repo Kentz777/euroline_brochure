@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import EuroLinebridgeLayout from "./layout/EuroLinebridgeLayout";
 import Home from "./pages/linebridge/Home";
+
 import Logistics from "./pages/linebridge/Logistics";
 import Contact from "./pages/linebridge/Contact";
 import SupplyChain from "./pages/linebridge/SupplyChain";
@@ -9,6 +10,8 @@ import CivilWorks from "./pages/linebridge/CivilWorks";
 import Careers from "./pages/linebridge/Careers";
 import About from "./pages/linebridge/About";
 import Warehousing from "./pages/linebridge/Warehousing";
+import EuroLineCashLayout from "./layout/EuroLineCashLayout";
+import HomeCash from "./pages/cash/Home";
 
 function App() {
   return (
@@ -41,6 +44,11 @@ function App() {
         <Route path="/linebridge/supply-chain" element={<SupplyChain />} />
         <Route path="/linebridge/fabrication" element={<Fabrication />} />
         <Route path="/linebridge/civil-works" element={<CivilWorks />} />
+      </Route>
+
+      {/* Euroline Cash Solutions Section */}
+      <Route path="/cash-solutions" element={<EuroLineCashLayout />}>
+        <Route path="/cash-solutions/home" element={<HomeCash />} />
       </Route>
     </Routes>
   );
