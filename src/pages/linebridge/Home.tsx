@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <>
       <HomeHeroSection />
-      <HomeServiceSection />
+      <HomeServiceSection buttonRoute="/linebridge/careers" />
       <HomeServicesListSection />
       <ReusableJobOpeningsSection
         title="JOB OPENINGS"

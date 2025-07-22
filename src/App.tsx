@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import EuroLinebridgeLayout from "./layout/EuroLinebridgeLayout";
 import Home from "./pages/linebridge/Home";
-
 import Logistics from "./pages/linebridge/Logistics";
 import Contact from "./pages/linebridge/Contact";
 import SupplyChain from "./pages/linebridge/SupplyChain";
@@ -12,6 +11,16 @@ import About from "./pages/linebridge/About";
 import Warehousing from "./pages/linebridge/Warehousing";
 import EuroLineCashLayout from "./layout/EuroLineCashLayout";
 import HomeCash from "./pages/cash/Home";
+import ATMReplenishment from "./pages/cash/ATMReplenishment";
+import CashBranchPickup from "./pages/cash/CashBranchPickup";
+import FirstLineMaintenance from "./pages/cash/FirstLineMaintenance";
+import ArmoredVehicleRental from "./pages/cash/ArmoredVehicleRental";
+import Retail from "./pages/cash/Retail";
+import CashManagement from "./pages/cash/CashManagement";
+import AircashTransport from "./pages/cash/AircashTransport";
+import ContactCash from "./pages/cash/ContactCash";
+import CareersCash from "./pages/cash/CareersCash";
+import AboutCash from "./pages/cash/AboutCash";
 
 function App() {
   return (
@@ -49,6 +58,34 @@ function App() {
       {/* Euroline Cash Solutions Section */}
       <Route path="/cash-solutions" element={<EuroLineCashLayout />}>
         <Route path="/cash-solutions/home" element={<HomeCash />} />
+        <Route path="/cash-solutions/contacts" element={<ContactCash />} />
+        <Route path="/cash-solutions/careers" element={<CareersCash />} />
+        <Route path="/cash-solutions/about" element={<AboutCash />} />
+        <Route
+          path="/cash-solutions/atm-replenishment"
+          element={<ATMReplenishment />}
+        />
+        <Route
+          path="/cash-solutions/cash-branch-pickup"
+          element={<CashBranchPickup />}
+        />
+        <Route
+          path="/cash-solutions/first-line-maintenance"
+          element={<FirstLineMaintenance />}
+        />
+        <Route
+          path="/cash-solutions/armored-vehicle-rental"
+          element={<ArmoredVehicleRental />}
+        />
+        <Route
+          path="/cash-solutions/aircash-transport"
+          element={<AircashTransport />}
+        />
+        <Route path="/cash-solutions/retail" element={<Retail />} />
+        <Route
+          path="/cash-solutions/cash-management"
+          element={<CashManagement />}
+        />
       </Route>
     </Routes>
   );
