@@ -38,6 +38,7 @@ const About = () => {
         title="Join Our Team"
         description="Join a growing team committed to excellence, innovation, and delivering real impact across industries."
         buttonLabel="Apply Now"
+        buttonRoute="/linebridge/careers"
       />
     </div>
   );

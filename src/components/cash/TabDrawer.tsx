@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import { FaCaretDown } from "react-icons/fa";
 import mainLogo from "../../assets/main_logo.png";
@@ -10,6 +10,9 @@ interface Props {
 
 const TabDrawer = ({ onClose }: Props) => {
   const [showServices, setShowServices] = useState(false);
+  const location = useLocation(); // ✅ get current path
+
+  const isActive = (path: string) => location.pathname === path;
 
   return (
     <div className="fixed top-0 left-0 h-full w-72 bg-white z-50 shadow-lg pl-4 pr-4 pb-4 pt-6 overflow-y-auto">
@@ -21,7 +24,7 @@ const TabDrawer = ({ onClose }: Props) => {
       </div>
 
       {/* Logo */}
-      <Link to="/linebridge/home">
+      <Link to="/cash-solutions/home">
         <img src={mainLogo} alt="Logo" className="w-16 h-16 object-contain" />
       </Link>
 
@@ -36,15 +39,27 @@ const TabDrawer = ({ onClose }: Props) => {
         <div className="border-t border-gray-400 my-4" />
 
         <Link
-          to="/linebridge/home"
-          className="block text-gray-800 font-medium hover:text-[#08268F]"
+          to="/cash-solutions/home"
+          className={`block font-medium hover:text-[#08268F] ${
+            isActive("/cash-solutions/home")
+              ? "text-[#08268F]"
+              : "text-gray-800"
+          }`}
         >
           Home
         </Link>
 
         <div>
           <button
-            className="flex justify-between items-center w-full text-gray-800 font-medium hover:text-[#08268F]"
+            className={`flex justify-between items-center w-full font-medium hover:text-[#08268F] ${
+              location.pathname.startsWith("/cash-solutions/") &&
+              location.pathname !== "/cash-solutions/home" &&
+              location.pathname !== "/cash-solutions/careers" &&
+              location.pathname !== "/cash-solutions/about" &&
+              location.pathname !== "/cash-solutions/contacts"
+                ? "text-[#08268F]"
+                : "text-gray-800"
+            }`}
             onClick={() => setShowServices(!showServices)}
           >
             Services
@@ -58,83 +73,64 @@ const TabDrawer = ({ onClose }: Props) => {
           {showServices && (
             <ul className="mt-2 space-y-2 text-[14px] text-gray-900">
               <li className="text-gray-400">Services We Offer:</li>
-              <li>
-                <Link
-                  to="/linebridge/logistics"
-                  className="hover:text-[#08268F]"
-                >
-                  ATM Replenishment
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/linebridge/warehousing"
-                  className="hover:text-[#08268F]"
-                >
-                  Cash/Branch Pickup
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/linebridge/supply-chain"
-                  className="hover:text-[#08268F]"
-                >
-                  FLM (First Line Maintenance)
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/linebridge/fabrication"
-                  className="hover:text-[#08268F]"
-                >
-                  Armored Vehicle Rental
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/linebridge/civil-works"
-                  className="hover:text-[#08268F]"
-                >
-                  Retail
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/linebridge/civil-works"
-                  className="hover:text-[#08268F]"
-                >
-                  Aircash/Interisland Transport
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/linebridge/civil-works"
-                  className="hover:text-[#08268F]"
-                >
-                  Cash Management (Coming Soon)
-                </Link>
-              </li>
+              {[
+                "atm-replenishment",
+                "cash-branch-pickup",
+                "first-line-maintenance",
+                "armored-vehicle-rental",
+                "aircash-transport",
+                "retail",
+                "cash-management",
+              ].map((service) => (
+                <li key={service}>
+                  <Link
+                    to={`/cash-solutions/${service}`}
+                    className={`hover:text-[#08268F] ${
+                      isActive(`/cash-solutions/${service}`)
+                        ? "text-[#08268F]"
+                        : "text-gray-800"
+                    }`}
+                  >
+                    {service
+                      .split("-")
+                      .map((s) => s[0].toUpperCase() + s.slice(1))
+                      .join(" ")}
+                  </Link>
+                </li>
+              ))}
             </ul>
           )}
         </div>
 
         <Link
-          to="/linebridge/careers"
-          className="block text-gray-800 font-medium hover:text-[#08268F]"
+          to="/cash-solutions/careers"
+          className={`block font-medium hover:text-[#08268F] ${
+            isActive("/cash-solutions/careers")
+              ? "text-[#08268F]"
+              : "text-gray-800"
+          }`}
         >
           Careers
         </Link>
 
         <Link
-          to="/linebridge/about"
-          className="block text-gray-800 font-medium hover:text-[#08268F]"
+          to="/cash-solutions/about"
+          className={`block font-medium hover:text-[#08268F] ${
+            isActive("/cash-solutions/about")
+              ? "text-[#08268F]"
+              : "text-gray-800"
+          }`}
         >
           About Us
         </Link>
 
         <Link
-          to="/linebridge/contacts"
-          className="block text-gray-800 font-medium hover:text-[#08268F]"
+          to="/cash-solutions/contacts"
+          className={`block font-medium hover:text-[#08268F] ${
+            isActive("/cash-solutions/contacts")
+              ? "text-[#08268F]"
+              : "text-gray-800"
+          }`}
         >
           Contact Us
         </Link>

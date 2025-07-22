@@ -6,7 +6,7 @@ type HomeJobOpeningsSectionProps = {
   title: string;
   description: string;
   buttonLabel: string;
-  buttonRoute: string; // <-- NEW: add this prop
+  buttonRoute: string; // REQUIRED!
 };
 
 const ReusableJobOpeningsSection = ({

@@ -10,21 +10,33 @@ const Header = () => {
   const location = useLocation();
 
   const navLinks = [
-    { name: "Home", path: "/linebridge/home" },
+    { name: "Home", path: "/cash-solutions/home" },
     { name: "Services", path: "" }, // dropdown
-    { name: "Careers", path: "/linebridge/careers" },
-    { name: "About Us", path: "/linebridge/about" },
-    { name: "Contact Us", path: "/linebridge/contacts" },
+    { name: "Careers", path: "/cash-solutions/careers" },
+    { name: "About Us", path: "/cash-solutions/about" },
+    { name: "Contact Us", path: "/cash-solutions/contacts" },
   ];
 
   const servicesDropdown = [
-    { name: "ATM Replenishment", path: "/linebridge/logistics" },
-    { name: "Cash/Branch Pickup", path: "/linebridge/warehousing" },
-    { name: "FLM (First Line Maintenance)", path: "/linebridge/supply-chain" },
-    { name: "Armored Vehicle Rental", path: "/linebridge/fabrication" },
-    { name: "Retail", path: "/linebridge/civil-works" },
-    { name: "Aircash/Interisland Transport", path: "/linebridge/civil-works" },
-    { name: "Cash Management (Coming Soon)", path: "/linebridge/civil-works" },
+    { name: "ATM Replenishment", path: "/cash-solutions/atm-replenishment" },
+    { name: "Cash/Branch Pickup", path: "/cash-solutions/cash-branch-pickup" },
+    {
+      name: "FLM (First Line Maintenance)",
+      path: "/cash-solutions/first-line-maintenance",
+    },
+    {
+      name: "Armored Vehicle Rental",
+      path: "/cash-solutions/armored-vehicle-rental",
+    },
+    { name: "Retail", path: "/cash-solutions/retail" },
+    {
+      name: "Aircash/Interisland Transport",
+      path: "/cash-solutions/aircash-transport",
+    },
+    {
+      name: "Cash Management (Coming Soon)",
+      path: "/cash-solutions/cash-management",
+    },
   ];
 
   // helper to check active
@@ -38,7 +50,7 @@ const Header = () => {
   return (
     <>
       <header className="w-full flex items-center justify-between px-4 lg:px-12 py-2 bg-transparent md:bg-white lg:bg-white shadow-sm fixed top-0 z-50">
-        <Link to="/linebridge/home">
+        <Link to="/cash-solutions/home">
           <img
             src={mainLogo}
             alt="Logo"

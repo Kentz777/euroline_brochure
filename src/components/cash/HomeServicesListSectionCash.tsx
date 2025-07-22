@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import OutlineCTAButton from "./OutlineCTAButton";
-import { serviceList } from "../data/linebridge/serviceList";
+import OutlineCTAButton from "../OutlineCTAButton";
+import { serviceList } from "../../data/cash/serviceList";
 
-const HomeServicesListSection = () => {
+const HomeServicesListSectionCash = () => {
   const navigate = useNavigate();
 
   return (
@@ -50,4 +50,4 @@ const HomeServicesListSection = () => {
   );
 };
 
-export default HomeServicesListSection;
+export default HomeServicesListSectionCash;

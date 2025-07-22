@@ -36,24 +36,24 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-y-4 text-center sm:flex sm:justify-between mt-3 lg:mt-0 lg:gap-x-32 sm:text-left lg:ml-auto lg:w-auto">
           <div className="space-y-1 text-left">
             <p className="hover:text-[#08268F]">
-              <Link to="/">About Us</Link>
+              <Link to="/cash-solutions/about">About Us</Link>
             </p>
             <p className="hover:text-[#08268F]">
-              <Link to="/">Help Center</Link>
+              <Link to="/cash-solutions/home">Help Center</Link>
             </p>
             <p className="hover:text-[#08268F]">
-              <Link to="/">Privacy Policy</Link>
+              <Link to="/cash-solutions/home">Privacy Policy</Link>
             </p>
           </div>
           <div className="space-y-1 text-right">
             <p className="hover:text-[#08268F]">
-              <Link to="/">Careers</Link>
+              <Link to="/cash-solutions/careers">Careers</Link>
             </p>
             <p className="hover:text-[#08268F]">
-              <Link to="/">Contact Us</Link>
+              <Link to="/cash-solutions/contacts">Contact Us</Link>
             </p>
             <p className="hover:text-[#08268F]">
-              <Link to="/">Legal Policies</Link>
+              <Link to="/cash-solutions/home">Legal Policies</Link>
             </p>
           </div>
         </div>
