@@ -28,7 +28,9 @@ const Footer = () => {
             From transport to infrastructure—built to move with your business.
           </p>
 
-          <OutlineCTAButton label="Call To Action" />
+          <Link to="/cash-solutions/home">
+            <OutlineCTAButton label="Go to Cash Solutions" />
+          </Link>
         </div>
 
         {/* Footer Links */}

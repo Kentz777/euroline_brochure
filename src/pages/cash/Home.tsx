@@ -9,6 +9,7 @@ const HomeCash = () => {
       <HomeHeroSection />
       <HomeServiceSection buttonRoute="/cash-solutions/careers" />
       <HomeServicesListSectionCash />
+
       <StickyChatButton />
     </>
   );
