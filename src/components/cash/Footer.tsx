@@ -29,7 +29,9 @@ const Footer = () => {
             accountability.
           </p>
 
-          <OutlineCTAButton label="Call To Action" />
+          <Link to="/linebridge/home">
+            <OutlineCTAButton label="Go to Linebridge Logistics" />
+          </Link>
         </div>
 
         {/* Footer Links */}
