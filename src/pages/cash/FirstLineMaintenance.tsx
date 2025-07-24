@@ -32,7 +32,7 @@ const FirstLineMaintenance = () => {
             image: "/images/flm3.png",
             title: "Secure & Proactive",
             description:
-              "From cash machines to branch terminals, our FLM service provides reliable first-response support. With secure protocols and real-time reporting, we act fast—resolving issues before they escalate and keeping your network running 24/7.",
+              "From cash machines to branch terminalss, our FLM service provides reliable first-response support. With secure protocols and real-time reporting, we act fast—resolving issues before they escalate and keeping your network running 24/7.",
           },
         ]}
       />
