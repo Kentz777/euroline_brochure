@@ -71,7 +71,7 @@ const Footer = () => {
           <FaLinkedinIn className="text-2xl" />
         </a>
         <a
-          href="https://www.facebook.com/eurolinebridge"
+          href="https://www.facebook.com/eurolinecash/"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#08268F] text-white p-2 "
@@ -79,7 +79,7 @@ const Footer = () => {
           <FaFacebookF className="text-2xl" />
         </a>
         <a
-          href="mailto:euro_linebridge@yahoo.com?subject=Inquiry&body=Hello%20EuroLinebridge%2C"
+          href="mailto:ph.hr@eurolinecash.com?subject=Inquiry&body=Hello%20EuroLine%20Cash%20Solutions%2C"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#08268F] text-white p-2"

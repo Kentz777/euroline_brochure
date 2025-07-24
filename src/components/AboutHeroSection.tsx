@@ -10,7 +10,7 @@ const AboutHeroSection = () => {
         transition={{ type: "spring", stiffness: 50, delay: 0.1 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        Together for <br className="md:hidden" /> Success!!
+        Secure <br className="md:hidden" /> Moves!!
       </motion.h2>
 
       <motion.img
@@ -30,9 +30,9 @@ const AboutHeroSection = () => {
         transition={{ type: "spring", stiffness: 50, delay: 0.5 }}
         viewport={{ once: true, amount: 0.5 }}
       >
-        At Euro Linebridge Logistics, we help businesses grow by combining
-        creativity, innovation, and data-driven strategies. Together, we build a
-        future of shared success.
+        Euro Linebridge Logistics Inc, expand services when it launch the CIT
+        business operations on the 1st of June 2021. The business trades as Euro
+        Line Cash Solutions. Head office is located in Las Pinas City
       </motion.p>
     </section>
   );

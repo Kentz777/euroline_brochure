@@ -1,8 +1,10 @@
+import ContactSection from "../../components/ContactSection";
+
 const ContactCash = () => {
   return (
-    <div>
-      <p>Contact Cash</p>
-    </div>
+    <>
+      <ContactSection />
+    </>
   );
 };
 

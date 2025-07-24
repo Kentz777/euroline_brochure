@@ -9,16 +9,22 @@ const ArmoredVehicleRental = () => {
     <div className="flex flex-col gap-10 bg-white">
       <div className="flex flex-col p-5 bg-gradient-to-b from-[#08268F] to-[#00BFFF] md:pt-[250px] pt-[120px] lg:pt-[180px]">
         <div style={{ width: "100%", height: "50vh" }}>
-          <Canvas camera={{ position: [0, 1, 5] }}>
-            <ambientLight intensity={4} />
+          <Canvas camera={{ position: [0, 1.5, 6], fov: 45 }}>
+            <ambientLight intensity={1} />
+            <directionalLight position={[10, 10, 5]} intensity={1} />
             <ArmoredTruck />
-            <OrbitControls />
+            <OrbitControls target={[0, 0.5, 0]} />
           </Canvas>
         </div>
-        <p className="ttext-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold text-white text-center mb-8 font-lato">
+        <p className="text-3xl sm:text-4xl lg:text-4xl xl:text-6xl font-bold text-white text-center m-8 font-lato">
           Armored van model
         </p>
-        <p className="text-lg text-white text-center">model description</p>
+        <p className="text-xs text-white text-center">
+          This work is based on "Low Poly 2013 Toyota HiAce"
+          (https://sketchfab.com/3d-models/low-poly-2013-toyota-hiace-f83b4ed4d8534efb81def77b6c1b642d)
+          by Alvin.Woodly (https://sketchfab.com/Alvin.Woodly) licensed under
+          CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+        </p>
       </div>
       <ReusableGallery
         sections={[
