@@ -50,12 +50,18 @@ const Header = () => {
   return (
     <>
       <header className="w-full flex items-center justify-between px-4 lg:px-12 py-2 bg-transparent md:bg-white lg:bg-white shadow-sm fixed top-0 z-50">
-        <Link to="/cash-solutions/home">
+        <Link
+          to="/cash-solutions/home"
+          className="flex flex-row items-center justify-center gap-5 md:gap-2"
+        >
           <img
             src={mainLogo}
             alt="Logo"
             className="w-[72px] h-[72px] object-contain"
           />
+          <p className="text-[#08268F] font-semibold hidden md:block text-xl md:text-sm">
+            Euroline Cash Solutions Phils.
+          </p>
         </Link>
 
         <nav className="hidden lg:flex md:flex items-center gap-6 relative">
