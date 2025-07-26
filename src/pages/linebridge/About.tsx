@@ -4,6 +4,7 @@ import ReusableCoreValues from "../../components/ReusableCoreValues";
 import MapsSection from "../../components/MapsSection";
 import AboutGallerySection from "../../components/AboutGallerySection";
 import ReusableJobOpeningsSection from "../../components/ReusableJobOpeningsSection";
+import { euroLinebridgeMapURL } from "../../data/linebridge/locations";
 
 const About = () => {
   return (
@@ -32,7 +33,7 @@ const About = () => {
           },
         ]}
       />
-      <MapsSection />
+      <MapsSection mapUrl={euroLinebridgeMapURL} />
       <AboutGallerySection />
       <ReusableJobOpeningsSection
         title="Join Our Team"

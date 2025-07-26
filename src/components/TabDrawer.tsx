@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { IoClose } from "react-icons/io5";
 import { FaCaretDown } from "react-icons/fa";
 import mainLogo from "../assets/main_logo.png";
@@ -10,9 +10,22 @@ interface Props {
 
 const TabDrawer = ({ onClose }: Props) => {
   const [showServices, setShowServices] = useState(false);
-  const location = useLocation(); // ✅ get current path
+  const [showCompanyDropdown, setShowCompanyDropdown] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const isActive = (path: string) => location.pathname === path;
+
+  const companies = [
+    {
+      label: "Eurolinebridge Logistics",
+      path: "/linebridge/home",
+    },
+    {
+      label: "Euroline Cash Solutions",
+      path: "/cash-solutions/home",
+    },
+  ];
 
   return (
     <div className="fixed top-0 left-0 h-full w-72 bg-white z-50 shadow-lg pl-4 pr-4 pb-4 pt-6 overflow-y-auto">
@@ -28,10 +41,41 @@ const TabDrawer = ({ onClose }: Props) => {
         <img src={mainLogo} alt="Logo" className="w-16 h-16 object-contain" />
       </Link>
 
-      <div className="mb-4">
-        <h1 className="text-blue-600 font-regular text-lg">
-          Euro Linebridge Logistics Inc.
-        </h1>
+      <div className="mb-4 relative">
+        <button
+          onClick={() => setShowCompanyDropdown((prev) => !prev)}
+          className="text-blue-600 font-regular text-lg flex items-center gap-1 hover:underline"
+        >
+          {companies.find((c) =>
+            location.pathname.startsWith(c.path.replace("/home", ""))
+          )?.label ?? "Choose Company"}
+          <FaCaretDown className="text-sm" />
+        </button>
+
+        {showCompanyDropdown && (
+          <ul className="absolute z-50 bg-white border rounded shadow-md w-64 mt-1">
+            {companies.map((company) => (
+              <li key={company.path}>
+                <button
+                  onClick={() => {
+                    navigate(company.path);
+                    setShowCompanyDropdown(false);
+                    onClose();
+                  }}
+                  className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-100 ${
+                    location.pathname.startsWith(
+                      company.path.replace("/home", "")
+                    )
+                      ? "text-blue-800 font-semibold"
+                      : "text-gray-800"
+                  }`}
+                >
+                  {company.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
 
       {/* Navigation */}
