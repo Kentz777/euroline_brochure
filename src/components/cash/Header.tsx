@@ -1,17 +1,20 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import mainLogo from "../../assets/main_logo.png";
 import { IoMenu } from "react-icons/io5";
+import { FaCaretDown } from "react-icons/fa";
 import TabDrawer from "./TabDrawer";
 
 const Header = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [isServicesOpen, setServicesOpen] = useState(false);
+  const [isCompanyOpen, setCompanyOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const navLinks = [
     { name: "Home", path: "/cash-solutions/home" },
-    { name: "Services", path: "" }, // dropdown
+    { name: "Services", path: "" },
     { name: "Careers", path: "/cash-solutions/careers" },
     { name: "About Us", path: "/cash-solutions/about" },
     { name: "Contact Us", path: "/cash-solutions/contacts" },
@@ -39,30 +42,64 @@ const Header = () => {
     },
   ];
 
-  // helper to check active
+  const companies = [
+    { label: "Euroline Cash Solutions Phils.", path: "/cash-solutions" },
+    { label: "Eurolinebridge Logistics", path: "/linebridge" },
+  ];
+
   const isActive = (path: string) => location.pathname === path;
 
-  // helper to check if any of dropdown is active
   const isAnyServiceActive = servicesDropdown.some(
     (item) => location.pathname === item.path
   );
 
+  const currentCompany =
+    companies.find((c) => location.pathname.startsWith(c.path))?.label ||
+    "Select Company";
+
   return (
     <>
       <header className="w-full flex items-center justify-between px-4 lg:px-12 py-2 bg-transparent md:bg-white lg:bg-white shadow-sm fixed top-0 z-50">
-        <Link
-          to="/cash-solutions/home"
-          className="flex flex-row items-center justify-center gap-5 md:gap-2"
-        >
+        <div className="flex flex-row items-center justify-center gap-5 md:gap-2 relative">
           <img
             src={mainLogo}
             alt="Logo"
             className="w-[72px] h-[72px] object-contain"
           />
-          <p className="text-[#08268F] font-semibold hidden md:block text-xl md:text-sm">
-            Euroline Cash Solutions Phils.
-          </p>
-        </Link>
+
+          {/* Company Dropdown */}
+          <div className="hidden md:block relative">
+            <button
+              onClick={() => setCompanyOpen(!isCompanyOpen)}
+              className="text-[#08268F] font-semibold text-xl md:text-sm lg:uppercase flex items-center gap-1"
+            >
+              {currentCompany}
+              <FaCaretDown className="text-xs" />
+            </button>
+
+            {isCompanyOpen && (
+              <ul className="absolute z-50 bg-white border rounded shadow-lg mt-2 w-64">
+                {companies.map((company) => (
+                  <li key={company.path}>
+                    <button
+                      onClick={() => {
+                        navigate(`${company.path}/home`);
+                        setCompanyOpen(false);
+                      }}
+                      className={`block w-full text-left px-4 py-2 text-sm ${
+                        location.pathname.startsWith(company.path)
+                          ? "text-blue-800 font-semibold"
+                          : "text-gray-800 hover:text-[#08268F] hover:bg-gray-100"
+                      }`}
+                    >
+                      {company.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
 
         <nav className="hidden lg:flex md:flex items-center gap-6 relative">
           {navLinks.map((link, idx) =>
