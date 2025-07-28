@@ -21,14 +21,14 @@ const CashBranchPickup = () => {
               "We ensure continuous availability of funds through precise, secure, and scheduled ATM replenishment. Let your customers enjoy uninterrupted access—anytime, anywhere.",
           },
           {
-            video: "/video/cash-branch.mp4",
+            video: "/video/cash1.mp4",
             image: "/images/cash-branch2.png",
             title: "Operations Focused",
             description:
               "Simplify your branch operations with scheduled cash pickups tailored to your needs. We ensure fast, traceable, and secure movement of funds from your branches to central vaults or banks, helping you streamline reconciliation and safeguard your assets.",
           },
           {
-            video: "/video/cash-branch.mp4",
+            video: "/video/cash2.mp4",
             image: "/images/cash-branch3.png",
             title: "Trust & Coverage",
             description:

@@ -21,15 +21,15 @@ const SupplyChain = () => {
               "Euro Linebridge Logistics helps you streamline every link in your supply chain—from sourcing and warehousing to distribution and final delivery. Our integrated systems ensure speed, visibility, and reduced costs across the entire process.",
           },
           {
-            video: "/video/supplychain_vid.mp4",
-            image: "/images/supply_chain.png",
+            video: "/video/supply1.mp4",
+            image: "/images/supply1.png",
             title: "End-to-End Control",
             description:
               "Gain full control over your supply chain with our end-to-end service approach. We provide real-time tracking, inventory management, and coordinated transport to ensure seamless movement from supplier to shelf.",
           },
           {
-            video: "/video/supplychain_vid.mp4",
-            image: "/images/supply_chain.png",
+            video: "/video/supply2.mp4",
+            image: "/images/supply2.png",
             title: "Resilient and Scalable",
             description:
               "Build a supply chain that adapts to demand, disruption, and growth. With Euro Linebridge Logistics, you gain a reliable partner equipped to scale with your business and respond quickly to changing market conditions.",

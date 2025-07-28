@@ -33,7 +33,11 @@ const About = () => {
           },
         ]}
       />
-      <MapsSection mapUrl={euroLinebridgeMapURL} />
+      <MapsSection
+        companyName="Eurolinebridge Logistics"
+        address="Blk 9 Lot 22 Joshua St, Las Piñas, 1744 Metro Manila"
+        mapUrl={euroLinebridgeMapURL}
+      />
       <AboutGallerySection />
       <ReusableJobOpeningsSection
         title="Join Our Team"

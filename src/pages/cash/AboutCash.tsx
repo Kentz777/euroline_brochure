@@ -33,7 +33,11 @@ const AboutCash = () => {
           },
         ]}
       />
-      <MapsSection mapUrl={eurolineCashMapURL} />
+      <MapsSection
+        mapUrl={eurolineCashMapURL}
+        companyName="Euroline Cash Solutions"
+        address="Blk 9 Lot 22 Joshua St, Las Piñas, 1744 Metro Manila"
+      />
       <AboutGallerySection />
       <ReusableJobOpeningsSection
         title="Join Our Team"
