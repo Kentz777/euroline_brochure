@@ -33,7 +33,7 @@ const ArmoredVehicleRental = () => {
             image: "/images/avr1.png",
             title: "Direct & Professional",
             description:
-              "Transport your high-value assets with confidence. Our fleet of armored vehicles is available for short- or long-term rental, complete with trained security personnel, GPS tracking, and 24/7 monitoring—ensuring maximum protection for your people and property.",
+              "Transport your high-value assets with confidence. Our fleet of armored vehicles is available for short or long-term rental, complete with trained security personnel, GPS tracking, and 24/7 monitoring—ensuring maximum protection for your people and property.",
           },
           {
             video: "/video/arm2.mp4",
