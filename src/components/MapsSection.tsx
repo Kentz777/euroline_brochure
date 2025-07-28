@@ -1,8 +1,14 @@
 type LocationSectionProps = {
   mapUrl: string;
+  companyName: string;
+  address: string;
 };
 
-const LocationSection = ({ mapUrl }: LocationSectionProps) => {
+const LocationSection = ({
+  mapUrl,
+  companyName,
+  address,
+}: LocationSectionProps) => {
   return (
     <section className="flex flex-col items-center justify-center px-6 lg:px-68 md:px-32 py-12 bg-white">
       <div className="bg-gradient-to-b from-[#08268F] to-[#00BFFF] p-12 flex flex-col items-center justify-center">
@@ -24,11 +30,9 @@ const LocationSection = ({ mapUrl }: LocationSectionProps) => {
 
         <div className="text-center text-white p-4 rounded-lg w-full flex flex-col gap-4">
           <h3 className="text-xl font-semibold mb-2 font-lato">
-            Euroline Cash Solutions
+            {companyName}
           </h3>
-          <p className="text-lg md:text-base">
-            Blk 9 Lot 22 Joshua St, Las Piñas, 1744 Metro Manila
-          </p>
+          <p className="text-lg md:text-base">{address}</p>
         </div>
       </div>
     </section>

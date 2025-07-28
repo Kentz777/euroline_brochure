@@ -21,14 +21,14 @@ const ATMReplenishment = () => {
               "We ensure continuous availability of funds through precise, secure, and scheduled ATM replenishment. Let your customers enjoy uninterrupted access—anytime, anywhere.",
           },
           {
-            video: "/video/atm-rep.mp4",
+            video: "/video/atm1.mp4",
             image: "/images/atm-rep2.png",
             title: "Never Empty",
             description:
               "Our armored teams replenish your ATMs with efficiency and security at the core. Stay ahead of demand and reduce downtime with round-the-clock coverage.",
           },
           {
-            video: "/video/atm-rep.mp4",
+            video: "/video/atm2.mp4",
             image: "/images/atm-rep3.png",
             title: "Stay Loaded",
             description:

@@ -21,15 +21,15 @@ const Fabrication = () => {
               "Euro Linebridge Logistics supports industrial and commercial operations with precision fabrication services. From pre-assembly to component processing, we ensure every item is made to spec and delivered on schedule—fully integrated with our transport and storage systems.",
           },
           {
-            video: "/video/fabrication_vid.mp4",
-            image: "/images/fabrication_img.png",
+            video: "/video/fab1.mp4",
+            image: "/images/fab1.png",
             title: "Built for Logistics Efficiency",
             description:
               "Our fabrication service is designed to complement your logistics workflow. We cut lead times by preparing components near distribution hubs—allowing for faster packing, staging, and deployment wherever your business operates.",
           },
           {
-            video: "/video/fabrication_vid.mp4",
-            image: "/images/fabrication_img.png",
+            video: "/video/fab2.mp4",
+            image: "/images/fab2.png",
             title: "Quality Meets Speed",
             description:
               "Whether you need welded structures, pre-fitted parts, or production-ready kits, our fabrication team delivers with accuracy and speed. Backed by Euro Linebridge’s logistics network, your materials move from workshop to worksite without delay.",
