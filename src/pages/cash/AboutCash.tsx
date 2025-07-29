@@ -1,4 +1,3 @@
-import AboutGallerySection from "../../components/ReusableImageGallery";
 import AboutHeroSection from "../../components/AboutHeroSection";
 import AboutReviews from "../../components/AboutReviews";
 import MapsSection from "../../components/MapsSection";
