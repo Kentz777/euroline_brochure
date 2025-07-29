@@ -12,12 +12,12 @@ const CareersCash = () => {
       <AvailableJobsSection
         jobs={[
           {
-            title: "Field Specialist",
-            image: "/images/logistics/job1.jpg",
+            title: "OCC Operator",
+            image: "/images/cash/job1.jpg",
           },
           {
-            title: "Reconciliation",
-            image: "/images/logistics/job2.jpg",
+            title: "Finance Staff",
+            image: "/images/cash/job2.jpg",
           },
         ]}
       />

@@ -1,10 +1,11 @@
-import AboutGallerySection from "../../components/AboutGallerySection";
+import AboutGallerySection from "../../components/ReusableImageGallery";
 import AboutHeroSection from "../../components/AboutHeroSection";
 import AboutReviews from "../../components/AboutReviews";
 import MapsSection from "../../components/MapsSection";
 import ReusableCoreValues from "../../components/ReusableCoreValues";
 import ReusableJobOpeningsSection from "../../components/ReusableJobOpeningsSection";
 import { eurolineCashMapURL } from "../../data/cash/locations";
+import ReusableImageGallery from "../../components/ReusableImageGallery";
 
 const AboutCash = () => {
   return (
@@ -36,9 +37,13 @@ const AboutCash = () => {
       <MapsSection
         mapUrl={eurolineCashMapURL}
         companyName="Euroline Cash Solutions"
-        address="Blk 9 Lot 22 Joshua St, Las Piñas, 1744 Metro Manila"
+        address="#44 Road 3 Project 6 1100 Quezon City, Philippines"
       />
-      <AboutGallerySection />
+      <ReusableImageGallery
+        topRow={["/images/cash/gal5.jpg", "/images/cash/gal1.jpg"]}
+        centerImage="/images/cash/gal6.jpg"
+        bottomRow={["/images/cash/gal7.jpg", "/images/cash/gal4.jpg"]}
+      />
       <ReusableJobOpeningsSection
         title="Join Our Team"
         description="Be part of a team that protects, delivers, and secures. At Euro Line Cash Solutions, your work keeps businesses and communities moving safely."

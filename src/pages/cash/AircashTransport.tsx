@@ -14,25 +14,25 @@ const AircashTransport = () => {
       <ReusableGallery
         sections={[
           {
-            video: "/video/aircash.mp4",
-            image: "/images/retail1.png",
-            title: "Retail Cash Handling",
+            video: "/video/air1.mp4",
+            image: "/images/air1.png",
+            title: "Island-to-Island Transport",
             description:
-              "Simplify your day-to-day operations with our end-to-end cash logistics tailored for retail businesses. From register pickups to end-of-day deposit services, we help streamline your cash flow and reduce in-store risk with reliable armored transport and timely reconciliation.",
+              "We provide fast and secure transport of high-value items and cash across islands via air, ensuring minimized transit time and full accountability. Ideal for banks, remittance centers, and high-risk cargo.",
           },
           {
-            video: "/video/aircash.mp4",
-            image: "/images/retail2.png",
-            title: "Retail Logistics Support",
+            video: "/video/air2.mp4",
+            image: "/images/air2.png",
+            title: "End-to-End Chain of Custody",
             description:
-              "From high-volume cash pickups to secured deliveries, our solutions are designed to keep your retail business running smoothly. We offer customizable services that scale with your needs—ensuring efficiency, safety, and accountability from store to vault.",
+              "From point of pickup to aerial transport and final delivery, our protocols ensure every item is tracked, verified, and protected throughout the journey. Our process includes sealed containers, GPS tracking, and digital documentation.",
           },
           {
-            video: "/video/aircash.mp4",
-            image: "/images/retail3.png",
-            title: "Focus on In-Store Support",
+            video: "/video/air3.mp4",
+            image: "/images/air3.png",
+            title: "Time-Critical Cash Services",
             description:
-              "We support retail branches with fast, secure, and scheduled services including cash pickup, replenishment, and emergency support. Our trusted team helps reduce shrinkage, improve audit trails, and let your staff focus on serving customers.",
+              "Whether it's emergency cash delivery or routine inter-branch transport, our team responds with speed and precision. We understand the urgency of your operations and match it with reliable logistics execution.",
           },
         ]}
       />
