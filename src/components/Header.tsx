@@ -41,7 +41,7 @@ const Header = () => {
 
   const currentCompany =
     companies.find((c) => location.pathname.startsWith(c.path))?.label ||
-    "Select Company";
+    "Eurolinebridge Logistics";
 
   return (
     <>

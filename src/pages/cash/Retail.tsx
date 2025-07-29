@@ -14,21 +14,21 @@ const Retail = () => {
       <ReusableGallery
         sections={[
           {
-            video: "/video/Logistics.mp4",
+            video: "/video/retail1.mp4",
             image: "/images/retail1.png",
             title: "Retail Cash Handling",
             description:
               "Simplify your day-to-day operations with our end-to-end cash logistics tailored for retail businesses. From register pickups to end-of-day deposit services, we help streamline your cash flow and reduce in-store risk with reliable armored transport and timely reconciliation.",
           },
           {
-            video: "/video/Logistics.mp4",
+            video: "/video/retail2.mp4",
             image: "/images/retail2.png",
             title: "Retail Logistics Support",
             description:
               "From high-volume cash pickups to secured deliveries, our solutions are designed to keep your retail business running smoothly. We offer customizable services that scale with your needs—ensuring efficiency, safety, and accountability from store to vault.",
           },
           {
-            video: "/video/Logistics.mp4",
+            video: "/video/retail3.mp4",
             image: "/images/retail3.png",
             title: "Focus on In-Store Support",
             description:

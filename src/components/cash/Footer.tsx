@@ -79,7 +79,7 @@ const Footer = () => {
           <FaFacebookF className="text-2xl" />
         </a>
         <a
-          href="mailto:ph.hr@eurolinecash.com?subject=Inquiry&body=Hello%20EuroLine%20Cash%20Solutions%2C"
+          href="mailto:ph.eurolinecashsolutions@gmail.com?subject=Inquiry&body=Hello%20EuroLine%20Cash%20Solutions%2C"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#08268F] text-white p-2"
