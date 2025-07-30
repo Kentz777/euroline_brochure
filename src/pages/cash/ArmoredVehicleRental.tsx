@@ -30,21 +30,21 @@ const ArmoredVehicleRental = () => {
         sections={[
           {
             video: "/video/arm1.mp4",
-            image: "/images/avr1.png",
+            image: "/images/avm1.png",
             title: "Direct & Professional",
             description:
               "Transport your high-value assets with confidence. Our fleet of armored vehicles is available for short or long-term rental, complete with trained security personnel, GPS tracking, and 24/7 monitoring—ensuring maximum protection for your people and property.",
           },
           {
             video: "/video/arm2.mp4",
-            image: "/images/avr2.png",
+            image: "/images/avm2.png",
             title: "Financial Industry Focus",
             description:
               "Designed for secure cash handling and high-risk transfers, our armored vehicle rental service provides safe and compliant solutions for banks, retailers, and logistics providers. Every unit is equipped with advanced security features and operated by vetted professionals.",
           },
           {
             video: "/video/arm3.mp4",
-            image: "/images/avr3.png",
+            image: "/images/avm3.png",
             title: "Flexible & Scalable",
             description:
               "Whether for a one-time high-security escort or ongoing armored logistics, our rental service adapts to your operational needs. Choose from a range of vehicle types, backed by fully insured drivers and real-time asset protection.",
