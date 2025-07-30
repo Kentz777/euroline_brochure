@@ -6,7 +6,11 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-const ContactSection = () => {
+type ContactSectionProps = {
+  address: string;
+};
+
+const ContactSection = ({ address }: ContactSectionProps) => {
   const [userNumber, setUserNumber] = useState("");
   const [message, setMessage] = useState("");
 
@@ -65,15 +69,10 @@ const ContactSection = () => {
         />
         <div className="flex justify-center">
           <button
-            className="
-      flex items-center justify-center gap-2
-      text-[#08268F] font-bold bg-white
-      px-5 py-2 text-sm
-      md:px-6 md:py-3 md:text-base
-      lg:px-7 lg:py-3.5 lg:text-lg
-      xl:px-8 xl:py-4 xl:text-xl
-      rounded-xl shadow-lg
-      hover:brightness-110 active:scale-95 transition"
+            className="flex items-center justify-center gap-2 text-[#08268F] font-bold bg-white
+              px-5 py-2 text-sm md:px-6 md:py-3 md:text-base lg:px-7 lg:py-3.5 lg:text-lg
+              xl:px-8 xl:py-4 xl:text-xl rounded-xl shadow-lg
+              hover:brightness-110 active:scale-95 transition"
             onClick={handleSend}
           >
             Send Message
@@ -89,7 +88,7 @@ const ContactSection = () => {
       </div>
 
       <div className="flex flex-col items-center mt-6 text-center text-sm md:text-lg">
-        <p>Blk 9 Lot 22 Joshua St, Las Piñas, 1744 Metro Manila</p>
+        <p>{address}</p>
       </div>
     </div>
   );
