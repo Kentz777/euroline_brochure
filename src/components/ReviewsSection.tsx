@@ -28,12 +28,10 @@ const reviews = [
 ];
 
 const logos = [
-  "/images/logo1.jpg",
-  "/images/logo1.jpg",
-  "/images/logo1.jpg",
-  "/images/logo1.jpg",
-  "/images/logo1.jpg",
-  "/images/logo1.jpg",
+  "/images/logo1.png",
+  "/images/logo2.png",
+  "/images/logo3.png",
+  "/images/logo4.png",
   ,
 ];
 
